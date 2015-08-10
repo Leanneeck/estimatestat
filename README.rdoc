@@ -1,0 +1,3 @@
+# HoverStat Technologies, Inc
+
+This is the file for the first version of EstimateStat. Check it out at [*HoverStat*](http://hoverstat.com)

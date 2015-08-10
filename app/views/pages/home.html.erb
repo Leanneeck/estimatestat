@@ -1,0 +1,39 @@
+<div class="jumbotron center">
+	<h1>EstimateStat</h1>
+	<% if user_signed_in? %>
+		<p>
+			<%= link_to "Leads", new_user_session_path, class: "btn-primary-lg" %>
+		</p>
+		<p>
+			<%= link_to 'Videos', videos_path %>
+		</p>
+		<p>
+			<%= link_to "CADs", "#", class: "btn-warning-lg" %>
+		</p>
+		<p>
+			<%= link_to "Estimates", "#", class: "btn-info-lg" %>
+		</p>
+		<p>
+			<%= link_to "Purchase Orders", "#", class: "btn-info-lg" %>
+		</p>
+		<p>
+			<%= link_to "Customers", "#", class: "btn-info-lg" %>
+	<% else %>
+
+	<br>
+	<br>
+
+	<p>
+		<%= link_to "Log in", new_user_session_path, class: "btn-primary btn-lg" %>
+	</p>
+
+
+	<br>
+
+	<p>
+		<%= link_to "Create New Account", new_user_registration_path, class: "btn-Success btn-lg" %>
+	</p>
+	<% end %>
+
+
+</div>

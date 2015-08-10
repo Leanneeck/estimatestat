@@ -1,0 +1,47 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+  var $button = $('#add-rows-button');
+
+  $button.click(function() {
+    var $prototype=$('#table-prototype').clone();
+    $prototype.attr('id', '');
+    $button.before($prototype);
+  });
+  });
+</script>
+
+<table id="table-prototype" class="base-table">
+    <tr>
+      <td height="24" valign="top" width="50%" class="row-label" >
+        <strong>Facet Length</strong>
+      </td>
+      <td height="24" valign="top" width="50%">
+        <input class="length" name="length[]" size="5" type="number">
+        in.
+      </td>
+    </tr>
+
+    <tr>
+      <td height="24" valign="top" width="50%" class="row-label" >
+        <strong>Facet Width</strong>
+      </td>
+      <td height="24" valign="top" width="50%">
+        <input class="width" name="width[]" size="5" type="number">
+        in.
+      </td>
+    </tr>
+    <tr>
+      <td height="24" valign="top" width="50%" class="row-label" >
+        <strong>Facet Slope</strong>
+      </td>
+      <td height="24" valign="top" width="50%">
+        <input class="slope" name="height[]" size="5" type="number">
+      </td>
+    </tr>
+</table>
+<button id="add-rows-button">Add another facet</button>
+<ul class="pager">
+  <li><%= link_to "Previous", estimatep1_path %></li>
+  <li><%= link_to "Next", estimatep3_path %></li>
+</ul>

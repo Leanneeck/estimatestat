@@ -1,0 +1,106 @@
+<form>
+  <div class="form-group">
+    <label for="waste">Waste</label>
+    <select id="waste" class="form-control">
+        <option selected=""></option>
+        <option>7% for hip</option>
+        <option>5% for gable</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="lenridge">Length of ridge (in.)</label>
+    <input type="number" class="form-control" id="lenridge" placeholder="Length of ridge (in.)">
+  </div>
+  <div class="form-group">
+    <label for="lenhip">Length of hips (in.)</label>
+    <input type="number" class="form-control" id="lenhip" placeholder="Length of hips (in.)">
+  </div>
+  <div class="form-group">
+    <label for="lendripedge">Length of drip edge (in.)</label>
+    <input type="number" class="form-control" id="lendripedge" placeholder="Length of drip edge (in.)">
+  </div>
+  <div class="form-group">
+    <label for="laborcost">Cost of labor ($/sq.in.)</label>
+    <input type="number" class="form-control" id="laborcost" placeholder="Cost of labor ($/sq.in.)">
+  </div>
+  <div class="checkbox">
+    <p>Materials</p>
+    <label>
+      <input type="checkbox" value="">
+      Shingles
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" value="">
+      Underlayment
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" value="">
+      Ice and water shield
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" value="">
+      Drip edge
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" value="">
+      Ridge vent
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" value="">
+      Ridge/hip cap
+    </label>
+  </div>
+  <div class="radio">
+    <p>Ice</p>
+    <label>
+      <input type="radio" name="iceRadios" id="iceRadios1" value="iceoption1" checked>
+      Yes
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="iceRadios" id="iceRadios2" value="iceoption2">
+      No
+    </label>
+  </div>
+  <div class="radio">
+    <p>Water</p>
+    <label>
+      <input type="radio" name="waterRadios" id="waterRadios1" value="wateroption1" checked>
+      Yes
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="waterRadios" id="waterRadios2" value="wateroption2">
+      No
+    </label>
+  </div>
+  <div class="radio">
+    <p>Double felt coverage</p>
+    <label>
+      <input type="radio" name="optionsRadios" id="optionsRadios1" value="dbloption1" checked>
+      On
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="dblRadios" id="dblRadios2" value="dbloption2">
+      Off
+    </label>
+  </div>
+
+  <ul class="pager">
+    <li><%= link_to "Finish", estimatep4_path %></li>
+  </ul>
+</form>
